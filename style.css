@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bellefair', serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 25px;
+    background-color: #111111;
+    color: white;
+}
+
+nav section {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 25%;
+    justify-content: space-evenly;
+}
+
+nav a{
+    height: fit-content;
+    width: fit-content;
+    background-size: auto;
+    cursor: pointer;
+}
+
+.middlediv{
+    padding: 0 5%;
+    border-left:2px rgba(255, 255, 255, 0.555) solid;
+    border-right:2px rgba(255, 255, 255, 0.555) solid;
+}
+.middlediv > a {
+    padding: 3px;
+}
+nav section img{
+    height: 30px;
+    width: auto;
+}
+
+.white{
+    filter: invert(100%);
+}
+
+nav figure {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    padding: 15px 38px;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #83E1EA;
+    color: white;
+    cursor: pointer;
+}
+
+main{
+    background-color: #021A20;
+    color: white;
+    padding-bottom: 80px;
+}
+
+header{
+    padding: 10% 25%;
+    text-align: center;
+    background-position: bottom, bottom left, bottom;
+    background-attachment: scroll, scroll, fixed;
+    background-image: linear-gradient(0deg, #021A20 50.12%, rgba(2, 26, 32, 0) 98.5%, rgba(2, 26, 32, 0) 98.5%) ,url(/img/frontplain.png), url(/img/bg.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 7%, 45% , cover;
+}
+
+header figure {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+header span::before{
+    font-size: 40px;
+    content: "◈";
+    vertical-align: middle;
+}
+
+header span::after{
+    font-size: 40px;
+    content: "◈";
+    vertical-align: middle;
+}
+
+header h2{
+    color: #E5B465;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1));
+    font-size: 80px;
+    display: block;
+    justify-content: center;
+    margin: 49px 0 22px 0;
+}
+
+header h3 {
+    color: #F6F3EB;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.92));
+    padding-bottom: 20px;
+}
+main section {
+    text-align: center;
+}
+main section figure {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+main section p {
+    justify-content: center; 
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+main section div {
+    margin-top: 67px;
+}
+main section button {
+    cursor: pointer;
+    margin: 0px 8px;
+}
+
+#assista {
+    padding: 18px 45px;
+    color: #113B42;
+    background-color: #3CD3EC;
+    font-size: 20px;
+    border-color: #113B42;
+    border-width: 2px;
+    border-style: dashed solid;
+}
+
+#saiba {
+    padding: 18px 57px;
+    color: #538895;
+    background-color: #021A20;
+    font-size: 20px;
+    border-color: #538895;
+    border-width: 2px;
+    border-style: dashed solid;
+}
+
+
+main section section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main section section div{
+    width: 20%;
+    background-color: #083742;
+    color: #3CD3EC;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+main section section div:hover{
+    transform: scale(1.1);    
+}
+
+main section section figure{
+    width: 100%;
+    padding: 0;
+}
+
+main section section img{
+    width: inherit;
+}
+
+main section section h2{
+    font-size: 35px;
+    margin: 65px 50px;
+}
+
+footer{
+    color: white;
+    background-color: #232221;
+    display: flex;
+    align-items: center;
+    padding: 2% 4%;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer figure{
+    width: 2.5%;
+    height: auto;
+}
+
+footer figure img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all .3s ease;
+}
+
+footer figure img:hover{
+    filter: grayscale(0%);
+}
+
+footer ul {
+    width: 70%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+
+.solink{
+    width: 30%;
+    justify-content: flex-end;
+}
+.solink > li {
+    padding: 20px;
+}
+.solink img{
+    height: 20px;
+    width: auto;
+    filter: grayscale(100%);
+    transition: all ease .3s;
+}
+
+.solink img:hover{
+    filter: grayscale(0%);
+}
