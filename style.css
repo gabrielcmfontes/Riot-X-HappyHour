@@ -7,40 +7,6 @@
     font-family: 'Bellefair', serif;
 }
 
-@media screen and (max-width: 768px){
-    nav section{
-        width: 100%;
-    }
-    #corners{
-        display: none;
-    }
-    .middlediv{
-        display: none;
-    }
-
-    header{
-        background-image: linear-gradient(0deg, #021A20 1.0%, rgba(2, 26, 32, 0) 98.5%, rgba(2, 26, 32, 0) 98.5%) , url(/img/geral/bg.png) !important;
-        background-size: 800px 800px !important;
-    }
-
-    header h2{
-        margin: 0;
-    }
-
-    header img{
-        width: 170%;
-    }
-
-    #textHeader{
-        display: flex;
-        justify-content: center;
-    }
-
-    
-}
-
-/* NAVBAR */
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -76,6 +42,30 @@ nav a{
 
 #corners{
     padding: 0 1%;
+}
+
+.none{
+    display: none;
+}
+
+#hamburguer{
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    border-radius: 0px;
+    padding: 0px 0.5px;
+    cursor: pointer;
+}
+
+#hamburguer::before,
+#hamburguer::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
 }
 
 nav section img{
@@ -318,3 +308,24 @@ footer ul li {
     filter: grayscale(0%);
 }
 
+
+@media screen and (max-width: 768px){
+   footer{
+    display: none;
+   }
+
+   header{
+    background-image: linear-gradient(0deg, #021A20 2.12%, rgba(2, 26, 32, 0) 98.5%, rgba(2, 26, 32, 0) 98.5%), url(/img/geral/bg.png);
+    background-size: cover;
+   }
+
+   header img{
+    width: 100%;
+   }
+
+   nav section{
+    display: none;
+   }
+
+   
+}
