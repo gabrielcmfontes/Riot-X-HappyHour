@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/LUhwmg.gif);
+    background-image: url(/img/geral/LUhwmg.gif);
     background-repeat: repeat;
     background-size: 15%;
 }
