@@ -161,6 +161,18 @@ main{
     padding-top: 20px;
 }
 
+#RiotXHappyHourSec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+#RiotXHappyHourSec p{
+    width: 30%;
+}
+
 
 #watchButtons{
     margin-top: 67px;
@@ -243,6 +255,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 2% 4%;
+    min-width: 960px;
+    width: 100%;
 }
 
 footer div{
@@ -308,12 +322,14 @@ footer ul li {
     filter: grayscale(0%);
 }
 
+@media screen and (max-width: 1025) {
+    footer{
+        width: 10%;
+    }
+}
+
 
 @media screen and (max-width: 768px){
-   footer{
-    display: none;
-   }
-
    header{
     background-image: linear-gradient(0deg, #021A20 2.12%, rgba(2, 26, 32, 0) 98.5%, rgba(2, 26, 32, 0) 98.5%), url(/img/geral/bg.png);
     background-size: cover;
@@ -325,7 +341,46 @@ footer ul li {
 
    nav section{
     display: none;
+   }   
+
+   #noticias{
+    display: flex;
+    flex-direction: column;
+    min-width: 280;
    }
 
-   
+   #noticias div{
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 20px;
+   }
+
+   #saiba{
+    margin-top: 10px;
+   }
+
+   img{
+    width: 80%;
+   }
+
+   #riotxhh{
+    display: flex;
+   }
+
+   nav h2{
+    text-align: center;
+   }
+
+   header{
+    padding: 20% 12.5%;
+   }
+
+   #optionsFooter{
+    display: none;
+   }
+
+   .solink li{
+    margin-left: 20px;
+    size: 200%;
+   }
 }
