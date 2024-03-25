@@ -337,6 +337,10 @@ footer ul li {
     margin-top: 20px;
    }
 
+   #noticias div:hover{
+    transform: scale(1.05); 
+}
+
    #RiotXHappyHourSec p{
     width: 70%;
 }
