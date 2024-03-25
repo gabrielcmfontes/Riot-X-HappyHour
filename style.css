@@ -322,12 +322,6 @@ footer ul li {
     filter: grayscale(0%);
 }
 
-@media screen and (max-width: 1025) {
-    footer{
-        width: 10%;
-    }
-}
-
 
 @media screen and (max-width: 768px){
    header{
@@ -351,7 +345,7 @@ footer ul li {
 
    #noticias div{
     width: 80%;
-    margin-left: 50px;
+    margin-left: 11%;
     margin-top: 20px;
    }
 
@@ -375,12 +369,16 @@ footer ul li {
     padding: 20% 12.5%;
    }
 
+   footer{
+    max-width: 430px;
+    min-width: 320px;
+   }
+
    #optionsFooter{
     display: none;
    }
 
    .solink li{
     margin-left: 20px;
-    size: 200%;
    }
 }
